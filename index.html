@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adi Jha | Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #4b6cb7;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .project, .experience {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #182848;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aditya kumar Jha</h1>
+    <p>Web Developer | UI Designer | Tech Enthusiast</p>
+    <img src="https://via.placeholder.com/120" alt="Adi Jha">
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and detail-oriented web developer with a strong foundation in front-end technologies like HTML, CSS, JavaScript, and responsive design. I enjoy transforming ideas into real-world digital solutions and collaborating with others to build elegant and efficient applications.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Stopwatch App</h3>
+      <p>A fully functional stopwatch with lap, reset, and pause features built using JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>This very responsive and elegant site showcasing my work, skills, and experience.</p>
+    </div>
+    <div class="project">
+      <h3>Code Unlock Game</h3>
+      <p>A fun JavaScript-based puzzle game involving logic and timer-based challenges.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="experience">
+      <h3>Intern - Web Development</h3>
+      <p><strong>SkillCraft Technology</strong> (2025)<br>
+      Built interactive UIs, contributed to frontend logic, and collaborated on project planning using agile methodology.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:adityakumarjha126@gmail.com">adityakumarjha126@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-kumar-jha-a2b238309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank">linkedin.com/in/adijha</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Adi Jha. All rights reserved.
+  </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = document.querySelector(this.getAttribute('href'));
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
